@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form Example</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Payment Form</h1>
+        <p>Required Fields are Followed by <strong><abbr title='require'>*</abbr></strong></p>
+
+        <section>
+            <h2>Contact Infromation</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li><label for="title_1">
+                        <input type="radio" id="title_1" id="title_1" name="title" value="A">
+                        Ace
+                
+                    </label>
+                </li>
+
+                    <li><label for="title_1">
+                        <input type="radio" id="title_1" id="title_1" name="title" value="Q">
+                        Queen
+                    </label>
+                </li>
+
+                    <li><label for="title_1">
+                        <input type="radio" id="title_1" id="title_1" name="title" value="K">
+                        King
+
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <p>
+            <label for="name">
+                <span>
+                    Name:
+                </span>
+                <strong> <abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="name=" name="username">
+        </p>
+
+        <p>
+            <label for="mail">
+                <span>
+                    Email:
+                </span>
+                <strong> <abbr title="required">*</abbr></strong>
+            </label>
+            <input type="text" id="mail=" name="usermail">
+        </p>
+
+        <p>
+            <label for="password">
+                <span>
+                    Password:
+                </span>
+                <strong> <abbr title="required">*</abbr></strong>
+            </label>
+            <input type="password" id="password=" name="userpassword">
+        </p>
+    </section>
+
+    <h2>Payment Infromation</h2>
+    <p>
+        <label for="Card">
+            <span>
+                Card Type:
+            </span>
+        </label>
+        <select id="card" name="usercard">
+        <option value="visa"> Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="paypal">Paypal</option>
+        <option value="amex">American Express</option>   
+        <option value="capone">Capital One</option> 
+    </select>
+    </p>
+        <p>
+            <label for="number">
+            <span>Card Number</span>
+            <strong> <abbr title="required">*</abbr></strong>
+        </label>
+        <input type="tel" name="cardnumber" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+    </p>
+
+    <p>
+        <label for="date">
+            <span>Expiration Date:</span>
+            <strong> <abbr title="required">*</abbr></strong>
+            <em>formatted as mm/dd/yyyy</em>
+        </label>
+        <input type="date" name="expiration" id="date">
+    </p>
+    <button type="submit">Validate Payment</button>
+</section>
+    
+
+
+</form>
+    
+</body>
+</html>
