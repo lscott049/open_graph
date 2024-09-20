@@ -1,0 +1,32 @@
+a[href="https://Google.com"]{color: red;}::first-letter{
+    font-size: large;
+    font-family: fantasy;
+}
+a[href="https://Wikipedia.com"]{color: grey;}
+::first-letter{
+    font-size: large;
+    font-family: fantasy;
+}
+a[href="https://W3schools.com"]{color:limegreen}
+::first-letter{
+    font-size: large;
+    font-family: fantasy;
+}
+a[href="https://Mdn.com"]{color: lightblue;}
+::first-letter{
+    font-size: large;
+    font-family: fantasy;
+}
+a[href="https://github.com"]{color:green;}::first-letter{
+    font-size: large;
+    font-family: fantasy;
+}
+
+a::after{content: '.com';}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
