@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: [row1-start] 100px  [row1-end] 200px [last-line] 200px  150px  100px;
+            /*grid-template-areas:"header header header ."                    
+                                "main main navbar navbar"
+                                "main main article sidebar"
+                                "aside . . sidebar"
+                                ". footer footer footer"; */
+
+            row-gap: [row gap] [col gap];
+           column-gap: 10px 20px;
+            gap: 10px
+        }
+
+           /* .container{
+                grid: [row1-start] "header header header" 1fr [row1-end]
+                [row2-start] "footer footer footer" 25px [row2-end]
+                / auto 50px auto;
+            }*/
+        
+
+        .box{
+            border:3px double purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .item-1{grid-area: header; 
+                grid-column: 1/6;
+                grid-row: 1/2;
+        }
+        .item-2{grid-area: main;
+                grid-column:1/4 ;
+                grid-row: 2/3;
+        }
+        .item-3{ grid-area: footer; 
+            grid-column:1/6 ;
+            grid-row: 3/4;
+        }
+        .item-4{grid-area: sidebar;
+            grid-column:4/4 ;
+            grid-row: 2/3;
+        }
+        .item-5{grid-area: navbar;  }
+        .item-6{grid-area: article; }
+        .item-7{grid-area: aside; }
+   
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class = "box item-1">Item1</div>
+        <div class = "box item-2">
+            <p>item-2</p>
+            <p>item-2</p>
+            <p>item-2</p>
+        </div>
+        <div class = "box item-3">Item-3</div>
+        <div class = "box item-4">Item4</div>
+        <div class = "box item-5">Item6</div>
+        <div class = "box item-6">Item6</div>
+        <div class = "box item-7">Item7</div>
+        <!-- 
+        <div class = "box item-6">Item6</div>
+        <div class = "box item-7">Item7</div>
+        <div class = "box item-8">Item8</div>
+        <div class = "box item-9">Item9</div>
+        <div class = "box item-10">Item10</div>
+        <div class = "box item-11">Item11</div>
+        <div class = "box item-12">Item12</div>
+        <div class = "box item-13">Item13</div>
+        <div class = "box item-14">Item14</div>
+        <div class = "box item-15">Item15</div> -->
+    </div>
+</body>
+</html>
