@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex is best</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: orange;
+             flex-direction:  row;
+             flex-wrap:wrap;
+             justify-content: flex-end;
+             align-items: flex-end;
+             align-content: start;
+
+             height: 900px;
+             
+
+        }
+        .flex-container > div{
+            background-color: black;
+            color: white;
+            margin: 10px;
+            padding: 15px;
+        }
+        .box{
+            height: 100px;
+            
+        }
+
+        .box1{
+            order:2;
+            flex-basis: 150px;
+        }   
+        .box2{
+            order:4;
+        }
+        .box3{
+            order:2;
+            
+        }
+        .box4{
+            order:1;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="box" style= "flex-grow: 3;  flex-shrink: 3;" >
+            <h1>A</h1>
+        </div>
+        <div class="box" style= "flex-grow: 3;  flex-shrink: 3;">
+            <h1>B</h1>
+        </div>
+        <div class="box" style= "flex-grow: 3;  flex-shrink: 3;">
+            <h1>C</h1>
+        </div>
+        <div class="box" style= "flex-grow: 3;  flex-shrink: 3;">
+            <h1>D</h1>
+        </div>
+
+       <!-- <div class="box1">
+            <img src="./Images/unnamed.jpg" alt="squares" width="150">
+        </div>
+        <div class="box2">
+            <img src="./Images/circle.jpg" alt="circle" width="150" height="75">
+        </div>
+        <div class="box3">
+            <img src="./Images/triangle.jpg" alt="triangles" width="150" >
+        </div>
+        <div class="box4">
+            <img src="./Images/trapazoid.jpg" alt="trapazoid" width="150" >
+        </div>-->
+        
+
+    </div>
+    
+</body>
+</html>
